@@ -1,0 +1,16 @@
+﻿
+
+namespace E3ShoppingSpree.Common
+{
+    public static class GlobalConstants
+    {
+        public static string InvalidMoneyExceptionMesage = "Money cannot be negative";
+        
+        public static string InvalidNameExceptionMessage = "Name cannot be empty";
+
+        public static string InsufficientMoneyExceptionMessage = "{0} can't afford {1}";
+
+
+
+    }
+}
