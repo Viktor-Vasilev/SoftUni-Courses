@@ -1,4 +1,4 @@
-﻿namespace CounterStrike.Core.Contracts
+﻿namespace MortalEngines.Core.Contracts
 {
     public interface IEngine
     {
