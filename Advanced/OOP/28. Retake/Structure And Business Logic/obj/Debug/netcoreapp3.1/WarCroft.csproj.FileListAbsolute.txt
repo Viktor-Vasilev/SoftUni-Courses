@@ -1,0 +1,13 @@
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\bin\Debug\netcoreapp3.1\WarCroft.exe
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\bin\Debug\netcoreapp3.1\WarCroft.deps.json
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\bin\Debug\netcoreapp3.1\WarCroft.runtimeconfig.json
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\bin\Debug\netcoreapp3.1\WarCroft.runtimeconfig.dev.json
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\bin\Debug\netcoreapp3.1\WarCroft.dll
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\bin\Debug\netcoreapp3.1\WarCroft.pdb
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.csprojAssemblyReference.cache
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.AssemblyInfoInputs.cache
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.AssemblyInfo.cs
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.dll
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.pdb
+C:\Users\VivoBook\Documents\GitHub\SoftUni-Courses\Advanced\OOP\28. Retake\Structure And Business Logic\obj\Debug\netcoreapp3.1\WarCroft.genruntimeconfig.cache
