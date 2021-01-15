@@ -39,7 +39,11 @@ CREATE TABLE Employees (
 )
 
 /* Problem Problem 17.	Backup Database */
-/* Hint: https://support.microsoft.com/en-gb/help/2019698/how-to-schedule-and-automate-backups-of-sql-server-databases-in-sql-se */
+BACKUP DATABASE SoftUni TO DISK = 'Desktop\softuni-backup.bak'
+
+DROP DATABASE SoftUni
+
+RESTORE DATABASE softUni FROM DISK = 'Desktop\softuni-backup.bak'
 
 /* Problem 18 - BASIC INSERT */
 INSERT INTO Towns VALUES
