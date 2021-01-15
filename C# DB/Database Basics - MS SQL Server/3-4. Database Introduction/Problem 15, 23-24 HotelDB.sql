@@ -124,4 +124,11 @@ INSERT INTO Occupancies VALUES
 (2, 120, GETDATE(), 121, 121, 0, 0, NULL),
 (3, 120, GETDATE(), 122, 122, 0, 0, NULL)
 
+/* Problem 23 - DECREASE TAX RATE */
+UPDATE Payments
+SET TaxRate -= TaxRate * 0.03
 
+SELECT TaxRate FROM Payments
+
+/* Problem 24 - DELETE ALL RECORDS */
+TRUNCATE TABLE Occupancies
