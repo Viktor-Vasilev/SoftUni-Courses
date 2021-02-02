@@ -58,7 +58,7 @@ END
 
 SELECT Salary,dbo.ufn_GetSalaryLevel(Salary) AS SalaryLevel
 FROM Employees
-GROUP BY Salary
+
 
 -- Problem 6 - EMPLOYEES BY SALARY LEVEL
 CREATE PROC usp_EmployeesBySalaryLevel(@SalaryLevel NVARCHAR(20))
@@ -74,26 +74,19 @@ EXEC usp_EmployeesBySalaryLevel 'High'
 CREATE FUNCTION ufn_IsWordComprised(@setOfLetters NVARCHAR(MAX), @word NVARCHAR(MAX))
 RETURNS BIT
 BEGIN
-    DECLARE @index INT = 1
+    DECLARE @count INT = 1
     DECLARE @wordMatch NVARCHAR(MAX)
 
-    WHILE (@index <= LEN(@word))
+    WHILE (@count <= LEN(@word))
     BEGIN
-        DECLARE @letter NCHAR(1) = SUBSTRING(@word, @index, 1)
+        DECLARE @currentLetter CHAR(1) = SUBSTRING(@word, @count, 1)
 		
-        IF(@setOfLetters LIKE '%' + @letter + '%')
-        BEGIN
-            SET @wordMatch = CONCAT(@wordMatch, @letter);
-        END
+     IF (CHARINDEX(@currentLetter, @setOfLetters) = 0)
+	 RETURN 0
 
-        SET @index += 1		-- increment while loop
-    END
-	
-    IF(@word = @wordMatch)
-    BEGIN
-        RETURN 1
-    END 
-    RETURN 0
+	 SET @count += 1;
+END
+RETURN 1
 END
 
 SELECT dbo.ufn_IsWordComprised('oistmiahf', 'Sofia') AS Result
