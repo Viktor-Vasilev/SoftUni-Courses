@@ -26,4 +26,16 @@ ON g.GameTypeId = gt.Id
 WHERE g.IsFinished = 1
 ORDER BY ug.[Level] DESC , u.Username ASC, g.[Name] ASC
 
+-- Problem 3 - Users in Games with Their Items
+SELECT u.Username, g.[Name] AS [Game], COUNT(ugi.ItemID) AS [Items Count], Sum(i.Price) AS [Items Price]
+	FROM UsersGames AS ug 
+	JOIN Games AS g ON g.Id = ug.GameId
+	JOIN Users As u ON u.Id = ug.UserId
+	JOIN UserGameItems AS ugi ON ugi.UserGameId = ug.Id
+	JOIN Items AS i ON i.Id = ugi.ItemId
+		GROUP BY u.Username, g.[Name]
+		HAVING COUNT(ugi.ItemID) >= 10
+		ORDER BY COUNT(ugi.ItemID) DESC, Sum(i.Price) DESC,  u.Username;
+
+
 
