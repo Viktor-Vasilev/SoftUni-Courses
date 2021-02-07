@@ -83,20 +83,20 @@ WHERE HotelId IN(5,7,9)
 delete from AccountsTrips
 where AccountId = 47
 
---5
+--5 EEE-Mails
 SELECT FirstName ,LastName,FORMAT(BirthDate,'MM-dd-yyy') AS BirthDate ,c.[Name] AS Hometown,
 Email FROM Accounts AS a 
 INNER JOIN Cities AS c ON a.CityId = c.Id
 WHERE Email LIKE 'e%'
 ORDER BY c.[Name] ASC
 
---6
+--6 City Statistics
 SELECT c.[Name] ,COUNT(*) AS Hotels FROM Hotels AS h
 INNER JOIN Cities AS c ON h.CityId = c.Id
 GROUP BY CityId , c.[Name]
 ORDER BY COUNT(*) DESC , c.[Name]
 
---7
+--7 Longest and Shortest Trips
 SELECT AccountId ,a.FirstName + ' '+ a.LastName AS FullName ,
 	 	MAX(DATEDIFF(DAY , ArrivalDate , ReturnDate)) AS LongestTrip,
 		MIN(DATEDIFF (DAY , ArrivalDate,ReturnDate)) AS ShortestTrip
@@ -107,13 +107,13 @@ WHERE t.CancelDate IS NULL AND a.MiddleName IS NULL
 GROUP BY AccountId , a.FirstName , a.LastName
 ORDER BY LongestTrip DESC , ShortestTrip ASC
 
---8
+--8 Metropolis
 SELECT TOP(10) c.Id , c.[Name] , c.CountryCode , COUNT(*) FROM Accounts AS a
 INNER JOIN Cities AS c ON a.CityId = c.Id 
 GROUP BY a.CityId  , c.Id , c.[Name] ,c.CountryCode
 ORDER BY COUNT(a.CityId) DESC
 
---9
+--9 Romantic Getaways
 SELECT a.Id , a.Email ,c.[Name] , COUNT(*) AS Trips FROM Accounts AS a
 INNER JOIN Cities AS c  ON c.Id = a.CityId 
 INNER JOIN Hotels AS h ON h.CityId = c.Id
@@ -124,7 +124,7 @@ WHERE TripId = t.Id AND t.RoomId = r.Id AND r.HotelId =  h.Id AND h.CityId = a.C
 GROUP BY a.Id , a.Email ,c.[Name] 
 ORDER BY Trips DESC ,a.Id
 
---10
+--10 GDPR Violation
 SELECT TripId,
 		   CASE WHEN MiddleName IS NULL THEN FirstName + ' ' + LastName
 				ELSE FirstName + ' ' + MiddleName + ' ' + LastName END AS FullName,
@@ -152,10 +152,10 @@ JOIN Cities ON [Destination] = Cities.Id
 ORDER BY FullName ASC,
 		 TripId ASC
 
---11 ???
+--11 Available Room ???
 
 
---12 4 FROM 7 POINTS!!!!
+--12 Switch Room    4 FROM 7 POINTS!!!!
 CREATE PROCEDURE usp_SwitchRoom(@TripId INT , @TargetRoomId INT)
 AS 
 BEGIN
