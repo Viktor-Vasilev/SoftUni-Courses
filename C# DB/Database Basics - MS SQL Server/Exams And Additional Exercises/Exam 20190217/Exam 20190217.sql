@@ -1,3 +1,6 @@
+CREATE DATABASE School
+USE School
+
 --01. DDL
 CREATE TABLE Subjects
 (
@@ -69,7 +72,7 @@ CONSTRAINT FK_StudentsSubjects_Subjects FOREIGN KEY (SubjectId) REFERENCES Subje
 )
 
 --02. Teachers
-INSERT INTO Teachers (FirstName, LastName,Address, Phone, SubjectId) VALUES
+INSERT INTO Teachers (FirstName, LastName,[Address], Phone, SubjectId) VALUES
 ('Ruthanne',	'Bamb',	'84948 Mesta Junction',	'3105500146',	6),
 ('Gerrard',	'Lowin',	'370 Talisman Plaza',	'3324874824',	2),
 ('Merrile',	'Lambdin',	'81 Dahle Plaza',	'4373065154',	5),
@@ -81,6 +84,7 @@ INSERT INTO  Subjects (Name, Lessons) VALUES
 ('Health', 10),
 ('Drama', 7),
 ('Sports', 9)
+
 
 --03. Update
 UPDATE StudentsSubjects
@@ -122,7 +126,8 @@ GROUP BY s.FirstName, s.LastName
  ORDER BY Grade DESC, FirstName, LastName
 
  --09. Not So In The Studying
- SELECT s.FirstName + ' ' + s.LastName AS [Full Name]
+SELECT CASE WHEN MiddleName IS NULL THEN FirstName + ' ' + LastName
+				ELSE FirstName + ' ' + MiddleName + ' ' + LastName END AS [Full Name]
    FROM Students AS s
    LEFT JOIN StudentsSubjects AS ss ON ss.StudentId = s.Id
    LEFT JOIN Subjects AS su ON su.Id = ss.SubjectId
