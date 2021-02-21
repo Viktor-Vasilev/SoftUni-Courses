@@ -1,0 +1,15 @@
+connectionString
+
+- SqlConnection
+	- openSqlConnection
+
+- ExecuteNonQuery
+	- Insert, Delete, Update
+
+- Execute Scalar
+	- If The select query returns only ONE record
+
+- ExecuteReader
+	- If the select query returns more than one record
+
+command.Parameters.AddWithValue("villainId", villainId);
