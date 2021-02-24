@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
+using System.Collections.Generic;
 
 namespace SoftUni
 {
@@ -67,20 +68,34 @@ namespace SoftUni
             //Console.WriteLine(result);
 
             // 10.	Departments with More Than 5 Employees
-            var softUniContext = new SoftUniContext();
-            var result = GetDepartmentsWithMoreThan5Employees(softUniContext);
-            Console.WriteLine(result);
+            //var softUniContext = new SoftUniContext();
+            //var result = GetDepartmentsWithMoreThan5Employees(softUniContext);
+            //Console.WriteLine(result);
 
             // 11.	Find Latest 10 Projects
+            //var softUniContext = new SoftUniContext();
+            //var result = GetLatestProjects(softUniContext);
+            //Console.WriteLine(result);
 
             // 12.	Increase Salaries
+            //var softUniContext = new SoftUniContext();
+            //var result = IncreaseSalaries(softUniContext);
+            //Console.WriteLine(result);
 
             // 13.	Find Employees by First Name Starting with "Sa"
+            //var softUniContext = new SoftUniContext();
+            //var result = GetEmployeesByFirstNameStartingWithSa(softUniContext);
+            //Console.WriteLine(result);
 
             // 14.	Delete Project by Id
+            //var softUniContext = new SoftUniContext();
+            //var result = DeleteProjectById(softUniContext);
+            //Console.WriteLine(result);
 
             // 15.	Remove Town
-
+            var softUniContext = new SoftUniContext();
+            var result = RemoveTown(softUniContext);
+            Console.WriteLine(result);
 
         }
 
@@ -327,20 +342,215 @@ namespace SoftUni
         // 10.	Departments with More Than 5 Employees
         public static string GetDepartmentsWithMoreThan5Employees(SoftUniContext context)
         {
+            var departments = context.Departments
+                    .Where(x => x.Employees.Count > 5)
+                    .OrderBy(x => x.Employees.Count)  // важно е сортировката да е тук, ако е по-долу гърми!!!
+                    .ThenBy(x => x.Name)
+                    .Select(x => new
+                    {
+                        x.Name,
+                        ManagerFirstName = x.Manager.FirstName,
+                        ManagerLastName = x.Manager.LastName,
+                        Employees = x.Employees.Select(e => new
+                                { 
+                                    e.FirstName,
+                                    e.LastName,
+                                    e.JobTitle,
+                                })
+                        .OrderBy(x => x.FirstName)
+                        .ThenBy(x => x.LastName)
+                        .ToList()
+                    })
+                   
+                    .ToList();
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var dep in departments)
+            {
+                sb.AppendLine($"{dep.Name} - {dep.ManagerFirstName} {dep.ManagerLastName}");
+
+                foreach (var emp in dep.Employees)
+                {
+                    sb.AppendLine($"{emp.FirstName} {emp.LastName} - {emp.JobTitle}");
+                }
+            }
+
+            var result = sb.ToString().TrimEnd();
+
+            return result;
+
+
+
 
 
         }
 
         // 11.	Find Latest 10 Projects
+        public static string GetLatestProjects(SoftUniContext context)
+        {
+           
+            var projects = context.Projects
+                                  .OrderByDescending(x => x.StartDate)
+                                  .Take(10)
+                                  .Select(x => new
+                                  {
+                                      x.Name,
+                                      x.Description,
+                                      StartDate = x.StartDate.ToString("M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture)
+                                  })
+                                  .OrderBy(x => x.Name)
+                                  .ToList();
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var project in projects)
+            {
+                sb.AppendLine(project.Name);
+                sb.AppendLine(project.Description);
+                sb.AppendLine(project.StartDate);
+            }
+
+            var result = sb.ToString().TrimEnd();
+
+            return result;
+
+
+        }
 
         // 12.	Increase Salaries
+        public static string IncreaseSalaries(SoftUniContext context)
+        {
+            var departments = new string[] {"Engineering", "Tool Design", "Marketing", "Information Services"};
+
+            var employees = context.Employees
+                .Where(x => departments.Contains(x.Department.Name))
+                .OrderBy(x => x.FirstName)
+                .ThenBy(x => x.LastName)
+                .ToList();
+
+            foreach (var emp in employees)
+            {
+                emp.Salary *= 1.12m;
+            }
+
+            context.SaveChanges();
+
+            var sb = new StringBuilder();
+
+            foreach (var emp in employees)
+            {
+                sb.AppendLine($"{emp.FirstName} {emp.LastName} (${emp.Salary:F2})");
+            }
+
+            var result = sb.ToString().TrimEnd();
+
+            return result;
+
+        }
 
         // 13.	Find Employees by First Name Starting with "Sa"
+        public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context)
+        {
+
+            var employees = context.Employees
+                //.Where(x => x.FirstName.StartsWith("Sa", true, CultureInfo.InvariantCulture)) // true - прави case insensitive !!! - не работи !!!
+                .Where(x => EF.Functions.Like(x.FirstName, "sa%"))
+                .Select(x => new
+                {
+                    x.FirstName,
+                    x.LastName,
+                    x.JobTitle,
+                    x.Salary,
+                })
+                .OrderBy(x => x.FirstName)
+                .ThenBy(x => x.LastName)
+                .ToList();
+
+
+            var sb = new StringBuilder();
+
+            foreach (var emp in employees)
+            {
+                sb.AppendLine($"{emp.FirstName} {emp.LastName} - {emp.JobTitle} - (${emp.Salary:F2})");
+            }
+
+            var result = sb.ToString().TrimEnd();
+
+            return result;
+
+        }
 
         // 14.	Delete Project by Id
+        public static string DeleteProjectById(SoftUniContext context)
+        {
+            var project = context.Projects.First(x => x.ProjectId == 2);
+
+            context.EmployeesProjects  //махаме референциите !!!
+                .ToList()
+                .ForEach(x => context.EmployeesProjects
+                .Remove(x));
+
+            context.Projects.Remove(project);
+
+            context.SaveChanges();
+
+            List<string> projects = context.Projects
+                                           .Take(10)
+                                           .Select(x => x.Name)
+                                           .ToList();
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (string proj in projects)
+            {
+                sb.AppendLine(proj);
+            }
+
+            var result = sb.ToString().TrimEnd();
+
+            return result;
+
+        }
 
         // 15.	Remove Town
+        public static string RemoveTown(SoftUniContext context)
+        {
+            var town = context.Towns
+                .Include(x => x.Addresses) 
+                .FirstOrDefault(x => x.Name == "Seattle");
 
+            var allAddressIds = town.Addresses
+                .Select(x => x.AddressId).ToList(); // взимаме всички адреси в града
+
+            var employees = context.Employees
+                .Where(x => x.AddressId.HasValue && allAddressIds.Contains(x.AddressId.Value)) // взимаме всички служители, слагаме .Value защото някой може да е null !!!
+                .ToList();
+
+            foreach (var employee in employees)
+            {
+                employee.AddressId = null;  //сетваме ги на null, за да можем да ги изтрием
+            }
+
+            
+
+            foreach (var addressId in allAddressIds) // изтриваме адресите
+            {
+                var address = context.Addresses
+                    .FirstOrDefault(x => x.AddressId == addressId); // първо трябва да го заредим
+
+                context.Addresses.Remove(address);
+            }
+
+            context.Towns.Remove(town);
+
+            context.SaveChanges();
+
+            var result = $"{allAddressIds.Count} addresses in Seattle were deleted";
+
+            return result;
+
+        }
 
     }
 }
