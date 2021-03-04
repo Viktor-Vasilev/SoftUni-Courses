@@ -103,6 +103,20 @@ namespace Lab
 
             // Concurency Check
 
+            // default - Last Wins !!!
+
+            // Solution - [ConcurrencyCheck] Attribute - гърми с грешка!
+            // while цикъл с try/catch 
+
+
+
+
+            // Cascade Delete
+
+            // Restrict = No Action
+
+            // настройваме го във Fluent API
+
 
         }
     }
