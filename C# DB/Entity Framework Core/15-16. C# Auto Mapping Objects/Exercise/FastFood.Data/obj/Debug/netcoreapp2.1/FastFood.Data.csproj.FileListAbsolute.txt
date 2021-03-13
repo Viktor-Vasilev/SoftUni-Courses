@@ -1,0 +1,30 @@
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.deps.json
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.json
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.dev.json
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.dll
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.pdb
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csprojAssemblyReference.cache
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfoInputs.cache
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfo.cs
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CopyComplete
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.dll
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.pdb
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.genruntimeconfig.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.deps.json
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.json
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.dev.json
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.dll
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.pdb
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csprojAssemblyReference.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfoInputs.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfo.cs
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CopyComplete
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.dll
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.pdb
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.genruntimeconfig.cache

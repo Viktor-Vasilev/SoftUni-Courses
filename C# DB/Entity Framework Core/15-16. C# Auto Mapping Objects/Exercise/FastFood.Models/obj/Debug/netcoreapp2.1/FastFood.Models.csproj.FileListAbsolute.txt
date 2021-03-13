@@ -1,0 +1,18 @@
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.deps.json
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csprojAssemblyReference.cache
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfoInputs.cache
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfo.cs
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\VivoBook\source\repos\EFC\15-16. C# Auto Mapping Objects\15-16.  Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.deps.json
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csprojAssemblyReference.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfoInputs.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfo.cs
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\VivoBook\source\repos\EFC\FastFood\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.pdb
