@@ -1,0 +1,17 @@
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Services.deps.json
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Services.dll
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\ref\RealEstates.Services.dll
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Services.pdb
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Data.dll
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Models.dll
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Data.pdb
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Models.pdb
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.csprojAssemblyReference.cache
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.AssemblyInfoInputs.cache
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.AssemblyInfo.cs
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.csproj.CoreCompileInputs.cache
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.csproj.CopyComplete
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.dll
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\ref\RealEstates.Services.dll
+C:\Users\VivoBook\source\repos\EFC\21-22. Best Practices And Architecture\Lab\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.pdb
