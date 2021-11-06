@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Demo</title>
+</head>
+
+<body>
+    <script>
+         async function getData() {
+            const url = 'http://localhost:3030/jsonstore/phonebook';
+
+            const res = await fetch(url);
+            const data = await res.json();
+
+            return data;
+         }
+
+         async function getDataById(id) {
+            const url = 'http://localhost:3030/jsonstore/phonebook/' + id;
+
+            const res = await fetch(url);
+            const data = await res.json();
+
+            return data;
+         }
+
+
+
+        async function postData() {
+            const url = 'http://localhost:3030/jsonstore/phonebook';
+
+            const data = {
+                person: 'Gerge',
+                phone: '+1-111-1111',
+            }
+
+            const options = {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+
+            const res = await fetch(url, options);
+            const result = await res.json();
+            
+            return result;
+        }
+
+        async function updateData(id, data) {
+            const url = 'http://localhost:3030/jsonstore/phonebook/' + id;
+
+            const options = {
+                method: 'put',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+
+            const res = await fetch(url, options);
+            const result = await res.json();
+            
+            return result;
+        }
+
+        async function deleteData(id){
+            const url = 'http://localhost:3030/jsonstore/phonebook/' + id;
+
+            const options = {
+                method: 'delete',
+                };
+
+            const res = await fetch(url, options);
+            const result = await res.json();
+            
+            return result;
+        }
+    </script>
+</body>
+
+</html>
